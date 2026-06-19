@@ -1,0 +1,10 @@
+{
+  "team": "seu-time",
+  "challenge": "Rinha FullStack SENAI 2026",
+  "stack": {
+    "backend": "Node.js + Fastify",
+    "frontend": "React + Vite + React Router",
+    "database": "SQLite + Prisma ORM + @libsql/client adapter"
+  },
+  "port": 3000
+}

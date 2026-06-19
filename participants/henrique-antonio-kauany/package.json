@@ -1,0 +1,16 @@
+{
+  "name": "rinha-senai-2026",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "build": "npm run build --workspace=frontend && npm run prisma:generate --workspace=backend",
+    "start": "npm run start --workspace=backend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend"
+  }
+}

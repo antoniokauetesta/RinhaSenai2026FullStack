@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "postinstall": "prisma generate && prisma db push"
+  },
+  "dependencies": {
+    "@fastify/static": "^7.0.4",
+    "@libsql/client": "^0.8.1",
+    "@prisma/adapter-libsql": "^5.20.0",
+    "@prisma/client": "^5.20.0",
+    "fastify": "^4.28.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0"
+  }
+}
